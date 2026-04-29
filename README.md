@@ -81,4 +81,4 @@ StockAnalyzo is a production-ready, full-stack web application designed for prof
 
 ---
 
-Built with ❤️ by Antigravity
+Built By Riyalal Tarole
