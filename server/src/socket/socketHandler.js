@@ -49,15 +49,15 @@ const socketHandler = (io) => {
         });
         
         // Add a small delay between each symbol to spread out API calls
-        await new Promise(resolve => setTimeout(resolve, 500));
+        await new Promise(resolve => setTimeout(resolve, 1000));
       } catch (err) {
         console.error(`Error updating ${symbol}:`, err.message);
       }
     }
   };
 
-  // Run update every 10 seconds to stay well within free tier limits
-  setInterval(updateMarket, 10000);
+  // Run update every 30 seconds to stay well within free tier limits
+  setInterval(updateMarket, 30000);
   updateMarket(); // Initial run
 };
 
